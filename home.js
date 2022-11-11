@@ -79,20 +79,20 @@ console.log('----------------------------------');
 
 // CODE HERE
 
-const canWeDeliverTwo = zipCode => {
-    for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
-        if (zipCode === deliveryAreaZipCodes[i]) {
-            "You're in our delivery zone!"
+const canWeDeliverTwo = (arr, zipCode) => {
+    for (const item of arr) {
+        if (item === zipCode) {
+            return "You're in our delivery zone!"
         } else {
-            "Sorry, we can't deliver to that address"
+            return "Sorry, we can't deliver to that address"
         }
     }
 }
 
 //Come back to this one (add higher order array method)
 
-console.log(canWeDeliverTwo(84606));
-console.log(canWeDeliverTwo(85205));
+console.log(canWeDeliverTwo(deliveryAreaZipCodes, 84606));
+console.log(canWeDeliverTwo(deliveryAreaZipCodes, 85205));
 
 console.log('----------------------------------');
 

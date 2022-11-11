@@ -14,7 +14,7 @@
     It should have one parameter, `username`
     The function should return a string that says: 
     'Welcome back, [USERNAME]'
-    Where USERNAME is the `username` arguement sent in
+    Where USERNAME is the `username` argument sent in
 
     For example, if called with `Andrew` as the 
     argument, `greetUser` should return the string:
@@ -23,9 +23,11 @@
 
 //CODE HERE
 
+const greetUser = username => `Welcome back, ${username}`;
 
+console.log(greetUser('Joy'));
 
-
+console.log('----------------------------------');
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -72,6 +74,9 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+
+
+console.log('----------------------------------');
 
 //////////////////PROBLEM 3////////////////////
 /* 

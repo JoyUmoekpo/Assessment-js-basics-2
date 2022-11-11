@@ -114,13 +114,56 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
-let foodArr = [
-    {name: 'Veggie Pizza'}, 
-    {price: '12.00'}, 
-    {category: 'entree'}, 
-    {popularity: '7'}, 
-    {rating: '7'}, 
-    {tags: ['mushrooms', 'bell peppers']}
+let foodArr = [{
+        name: 'Pepperoni Pizza',
+        price: 9.00,
+        category: 'entree',
+        popularity: 1,
+        rating: 9,
+        tags: [
+            'pepperoni', 'cheese', 'sauce'
+        ]
+    },
+    {
+        name: 'Cheese Pizza',
+        price: 8.50,
+        category: 'entree',
+        popularity: 3,
+        rating: 7.5,
+        tags: [
+            'cheese', 'sauce'
+        ]
+    },
+    {
+        name: 'Veggie Pizza',
+        price: 10.50,
+        category: 'entree',
+        popularity: 4,
+        rating: 7,
+        tags: [
+            'mushrooms', 'bell peppers', 'sauce'
+        ]
+    },
+    {
+        name: 'Chicken Wings',
+        price: 8.00,
+        category: 'entree',
+        popularity: 2,
+        rating: 8.5,
+        tags: [
+            'wings', 'bbq', 'lemon pepper', "hot"
+        ]
+    },
+    {
+        name: 'Lava Cake',
+        price: 5.00,
+        category: 'dessert',
+        popularity: 6,
+        rating: 7,
+        tags: [
+            'chocolate', 'cake'
+        ]
+    }
 ]
 
 console.log(foodArr);
@@ -141,11 +184,15 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(function (food) {
+        return food.tags.includes('sauce');
+})
 
-
+console.log(filteredFood);
 
 console.log('---------------------------------------------------------');
+
+//Come back
 
 //////////////////PROBLEM 5////////////////////
 /* 

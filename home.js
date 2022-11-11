@@ -53,7 +53,12 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+const canWeDeliver = zipCode => deliveryAreaZipCodes.includes(zipCode) ? "You're in our delivery zone!" : "Sorry, we can't deliver to that address"
 
+console.log(canWeDeliver(84606));
+console.log(canWeDeliver(85205));
+
+console.log('----------------------------------');
 
 /* 
     Problem 2 Continued
@@ -74,7 +79,20 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+const canWeDeliverTwo = zipCode => {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+        if (zipCode === deliveryAreaZipCodes[i]) {
+            "You're in our delivery zone!"
+        } else {
+            "Sorry, we can't deliver to that address"
+        }
+    }
+}
 
+//Come back to this one (add higher order array method)
+
+console.log(canWeDeliverTwo(84606));
+console.log(canWeDeliverTwo(85205));
 
 console.log('----------------------------------');
 
@@ -91,13 +109,12 @@ console.log('----------------------------------');
     Read on for more instructions.
 */
 
-const deals = [
-    {
-        title: '15% Off!', 
+const deals = [{
+        title: '15% Off!',
         desc: 'Applied to your entire order when you spend $30 or more'
-    }, 
+    },
     {
-        title: 'Free Kids Meal with 2 Regular Entrees', 
+        title: 'Free Kids Meal with 2 Regular Entrees',
         desc: '   This deal lasts until the end of March! '
     }
 ]
@@ -113,7 +130,8 @@ const deals = [
 
 //CODE HERE
 
-
+const title = deals[0].title.replace('15% Off!','10% Off!')
+console.log(title);
 
 /*
     The restaurant is going to continue its
@@ -129,3 +147,5 @@ const deals = [
 */
 
 //CODE HERE
+const desc = deals[1].desc.replace('March','April').trim();
+console.log(desc);

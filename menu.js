@@ -32,7 +32,20 @@
 
 //CODE HERE
 
+let pizza = {
+    name: 'Peppy Pizza',
+    price: 10.00,
+    category: 'entree',
+    popularity: 3,
+    rating: 8.5,
+    tags: [
+        'pepperoni', 'mushrooms', 'bacon'
+    ]
+}
 
+console.log(pizza);
+
+console.log('---------------------------------------------------------');
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -44,6 +57,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -75,6 +89,8 @@
 //CODE HERE
 
 
+console.log('---------------------------------------------------------');
+
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -90,6 +106,8 @@
 //CODE HERE
 
 
+
+console.log('---------------------------------------------------------');
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -108,6 +126,8 @@
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
+
+console.log('---------------------------------------------------------');
 
 //////////////////PROBLEM 5////////////////////
 /* 

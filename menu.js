@@ -79,7 +79,9 @@ console.log(pizza.tags[1]);
 
 //CODE HERE
 
-let {price} = pizza;
+let {
+    price
+} = pizza;
 console.log(price);
 
 /*
@@ -91,7 +93,9 @@ console.log(price);
 
 //CODE HERE
 
-let {category} = pizza;
+let {
+    category
+} = pizza;
 console.log(category);
 
 console.log('---------------------------------------------------------');
@@ -110,7 +114,16 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
+let foodArr = [
+    {name: 'Veggie Pizza'}, 
+    {price: '12.00'}, 
+    {category: 'entree'}, 
+    {popularity: '7'}, 
+    {rating: '7'}, 
+    {tags: ['mushrooms', 'bell peppers']}
+]
 
+console.log(foodArr);
 
 console.log('---------------------------------------------------------');
 

@@ -184,8 +184,7 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(food => food.tags.includes('sauce'));
-
+const filteredFood = foodArr.filter(food => food.tags.includes('mushrooms'));
 
 console.log(filteredFood);
 

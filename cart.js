@@ -35,8 +35,10 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((acc, curr)=> acc + curr.price, 0)
+console.log(summedPrice);
 
+console.log('---------------------------------------------------------');
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -56,6 +58,8 @@ const cart = [
 //CODE HERE
 
 
+
+console.log('---------------------------------------------------------');
 
 //////////////////PROBLEM 3////////////////////
 /*  

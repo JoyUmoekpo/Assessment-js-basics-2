@@ -133,6 +133,8 @@ const deals = [{
 const title = deals[0].title.replace('15% Off!','10% Off!')
 console.log(title);
 
+console.log('----------------------------------');
+
 /*
     The restaurant is going to continue its
     family deal for another month. 

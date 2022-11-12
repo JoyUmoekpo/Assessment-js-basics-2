@@ -184,9 +184,8 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(function (food) {
-        return food.tags.includes('sauce');
-})
+const filteredFood = foodArr.filter(food => food.tags.includes('sauce'));
+
 
 console.log(filteredFood);
 
@@ -235,6 +234,10 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
+const filterByProperty = (property, number, type) => {
+    let filteredArray = [];
+
+}
 
 /*
     Invoke the `filterByProperty` function passing

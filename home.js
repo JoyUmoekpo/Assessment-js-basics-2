@@ -80,16 +80,14 @@ console.log('----------------------------------');
 // CODE HERE
 
 const canWeDeliverTwo = (arr, zipCode) => {
-    for (const item of arr) {
-        if (item === zipCode) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === zipCode) {
             return "You're in our delivery zone!"
         } else {
             return "Sorry, we can't deliver to that address"
         }
     }
 }
-
-//Come back to this one (add higher order array method)
 
 console.log(canWeDeliverTwo(deliveryAreaZipCodes, 84606));
 console.log(canWeDeliverTwo(deliveryAreaZipCodes, 85205));
@@ -130,7 +128,7 @@ const deals = [{
 
 //CODE HERE
 
-const title = deals[0].title.replace('15% Off!','10% Off!')
+const title = deals[0].title.replace('15% Off!', '10% Off!')
 console.log(title);
 
 console.log('----------------------------------');
@@ -149,5 +147,5 @@ console.log('----------------------------------');
 */
 
 //CODE HERE
-const desc = deals[1].desc.replace('March','April').trim();
+const desc = deals[1].desc.replace('March', 'April').trim();
 console.log(desc);

@@ -108,7 +108,19 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts)
 
+        this.employees = employees;
+    }
+    getEmployees() {
+        return `${this.name} manages ${this.employees}`;
+    }
+    addEmployee(emp) {
+        return this.employees += ` and ` + emp;
+    }
+}
 
 /*
     Create a new instance of your class.
@@ -123,6 +135,10 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
+let manager = new Manager('Winston', 'weekday mornings, weekday afternoons', 'Cece and Schmidt');
+console.log(manager);
+
+console.log('---------------------------------------------------------');
 
 /*
     Call the `getEmployees` method on the
@@ -130,6 +146,10 @@ console.log('---------------------------------------------------------');
 */
 
 //CODE HERE
+
+console.log(manager.getEmployees());
+
+console.log('---------------------------------------------------------');
 
 /*
     Call the `addEmployee` method on the 
@@ -139,10 +159,17 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE 
 
+console.log(manager.addEmployee('Coach'));
+
+console.log('---------------------------------------------------------');
+
+
 /*
-    Call the `getEmployees` method on the
-    `manager` object again to confirm 
-    that an employee was added.
+Call the `getEmployees` method on the
+`manager` object again to confirm 
+that an employee was added.
 */
 
 //CODE HERE
+
+console.log(manager.getEmployees());

@@ -57,7 +57,11 @@ console.log('---------------------------------------------------------');
 
 //CODE HERE
 
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    return cartTotal + (cartTotal * tax) - couponValue;
+}
 
+console.log(calcFinalPrice(20, 10, .10));
 
 console.log('---------------------------------------------------------');
 

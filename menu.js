@@ -230,33 +230,27 @@ console.log('---------------------------------------------------------');
 */
 
 //CODE HERE
+function filterByProperty(property, number, type) {
 
-const filterByProperty = (property, number, type) => {
-    // let filteredArray = foodArr.filter(function(food) {
-    //     return food
-    // });
-
-    
-    // for (let i = 0; i < foodArr.length; i++) {
-    //     if(type === 'above'){
-    //         return ;
-    //     } else {
-    //         return;
-    //     }
-    //     // return foodArr[i];
-    // }
-
+    let filteredArray = foodArr.filter(function (food) {
+        for (let i = 0; i < food.length; i++) {
+            if (food[property] > number && type === 'above') {
+                filteredArray.push(food[i])
+            }
+        }
+    })
+    return filteredArray;
 }
 
-/*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+console.log(filterByProperty('rating', 4, 'above'));
 
-    You'll have to console.log to see the filtered array
+/*
+Invoke the `filterByProperty` function passing
+in a value for each parameter.
+
+You'll have to console.log to see the filtered array
 */
 
 //CODE HERE
 
-console.log(filterByProperty('rating', 8, 'above'));
-
-// Come back
+// console.log(filterByProperty('rating', 4, 'above'));
